@@ -145,7 +145,7 @@ async function signMessage(event) {
       name: "OrderbookContract",
       version: "1.0",
       chainId: 17000, // Truffle network's chain id
-      verifyingContract: "0xd54d108DB195016e2d0Ff2a11B4a04c91050BD65", // Address of contract deployed on Truffle network
+      verifyingContract: "0xd011Ea00462A0b84B100A92a95a806bF44536B36", // Address of contract deployed on Truffle network
     },
     message: {
       nonce,
@@ -168,7 +168,7 @@ async function signMessage(event) {
       Order: [
         { name: "nonce", type: "uint256" },
         { name: "sender", type: "address" },
-        { name: "direction", type: "enum" },
+        { name: "direction", type: "uint256" },
         { name: "price", type: "uint256" },
         { name: "amount", type: "uint256" },
         { name: "expired", type: "uint256" },
